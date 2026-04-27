@@ -8,7 +8,7 @@ const app  = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || 3006;
+const PORT = process.env.PORT || 3005;
 connectDB();
 
 const ok  = (res, data, status = 200) => res.status(status).json({ success: true, ...data });
